@@ -8,4 +8,16 @@ git status // just to see
 ssh-keygen -t rsa -b 4096 -C "luckyyyyy2004@gmail.com"
 cat <path to id_rsa.pub> # add this key to git hub account
 git remotte add origin <ssh url.git>
+if 
+{To github.com:Nitinkumawat2004/c-projects.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'github.com:Nitinkumawat2004/c-projects.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+} error produce then
+enter
+git pull --rebase origin master
+
 git push origin master
